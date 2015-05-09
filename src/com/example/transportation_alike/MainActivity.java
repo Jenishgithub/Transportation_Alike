@@ -41,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
 
 		setTab();
 	}
-
+//yo you buttduck
 	private List<Fragment> getFragments() {
 		// TODO Auto-generated method stub
 		List<Fragment> fragments = new ArrayList<>();
