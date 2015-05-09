@@ -7,7 +7,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
-	private static final String[] CONTENT = new String[] { "First", "Second" };
+	// private static final String[] CONTENT = new String[] { "First", "Second"
+	// };
 	List<Fragment> fragments;
 
 	public ViewPagerAdapter(FragmentManager fm, List<Fragment> fragments) {
@@ -19,11 +20,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 	public Fragment getItem(int position) {
 
 		return this.fragments.get(position);
-	}
-
-	@Override
-	public CharSequence getPageTitle(int position) {
-		return CONTENT[position % CONTENT.length].toUpperCase();
 	}
 
 	@Override
