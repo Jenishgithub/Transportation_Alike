@@ -7,8 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class ViewPagerAdapter extends FragmentPagerAdapter {
-	// private static final String[] CONTENT = new String[] { "First", "Second"
-	// };
+
 	List<Fragment> fragments;
 
 	public ViewPagerAdapter(FragmentManager fm, List<Fragment> fragments) {

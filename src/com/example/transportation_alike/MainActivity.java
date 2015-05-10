@@ -4,25 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.annotation.SuppressLint;
-import android.app.ActionBar;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
 	TextView tvHome, tvSetting;
 	ViewPagerAdapter mAdapter;
-	ViewPager mPager;
-	FrameLayout mFrameLayout;
+	public static ViewPager mPager;
+	public static FrameLayout container;
 
 	@SuppressLint("NewApi")
 	@Override
@@ -33,15 +28,16 @@ public class MainActivity extends ActionBarActivity {
 
 		tvHome = (TextView) findViewById(R.id.tvHome);
 		tvSetting = (TextView) findViewById(R.id.tvSetting);
+		container = (FrameLayout) findViewById(R.id.container);
 
 		List<Fragment> fragments = getFragments();
 		mAdapter = new ViewPagerAdapter(getSupportFragmentManager(), fragments);
 		mPager = (ViewPager) findViewById(R.id.pager);
 		mPager.setAdapter(mAdapter);
-
 		setTab();
 	}
-//yo you buttduck
+
+	// yo you buttduck
 	private List<Fragment> getFragments() {
 		// TODO Auto-generated method stub
 		List<Fragment> fragments = new ArrayList<>();

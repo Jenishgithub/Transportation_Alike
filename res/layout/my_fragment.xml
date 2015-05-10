@@ -48,7 +48,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnSubmitt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/llsecondone"
@@ -61,10 +61,10 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/button1"
-        android:layout_alignBottom="@+id/button1"
-        android:layout_marginLeft="46dp"
-        android:layout_toRightOf="@+id/button1"
+        android:layout_alignBaseline="@+id/btnSubmitt"
+        android:layout_alignBottom="@+id/btnSubmitt"
+        android:layout_marginLeft="33dp"
+        android:layout_toRightOf="@+id/btnSubmitt"
         android:text="Cancel" />
 
 </RelativeLayout>
